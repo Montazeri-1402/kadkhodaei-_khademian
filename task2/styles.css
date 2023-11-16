@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  .card {
+    background: #292D3E; /* Card background color */
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Left-align all text */
+  }
+  .card h2, .card h3, .card h4 {
+    margin: 0;
+    padding: 0 0 10px 35px;
+     /* Add padding to left-align with the list items */
+  }
+  .card h4 {
+    font-size: 18px;
+    color: #aaa; /* Subtitle color */
+    padding-bottom: 20px;
+  }
+  .card button {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    border: none;
+    padding: 10px;
+    width: calc(100% - 10px); /* Adjust width to match padding */
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px 5px 20px 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 35px; 
+  }
+  .card ul li {
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 10px; 
+  }
+  .card ul li::before {
+    content: '✓'; 
+    color: #292D3E; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+    line-height: 1; 
+    background-color: white; 
+    border-radius: 50%;
+    width: 20px; 
+    height: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .card h3{
+    font-size: 35px;
+  }
+  .card h4{
+    font-size: 15px;
+  }
+  .card h2{
+    font-size: 20px;
+  }
